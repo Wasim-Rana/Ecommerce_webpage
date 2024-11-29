@@ -1,0 +1,338 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+    background-image: url('https://images.unsplash.com/photo-1718223091879-082d4affab7f?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+body > section{
+        width: 60%;
+        height: 70%;
+        border: 1px solid ;
+        display: flex;
+        border-radius: 10px ;
+
+}
+
+body >section>aside{
+    width: 35%;
+    height: 100%;
+    border-radius: 10px 0px 0px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+body>section>aside>h1{
+    font-size: 40px;
+    font-weight: 400;
+    color: white;
+    
+}
+form>aside {
+    width: 400px;
+    background: linear-gradient(#212121, #212121) padding-box,
+                linear-gradient(145deg, transparent 35%,#e81cff, #40c9ff) border-box;
+    border: 2px solid transparent;
+    padding: 32px 24px;
+    font-size: 14px;
+    font-family: inherit;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    box-sizing: border-box;
+    border-radius: 16px;
+    background-size: 200% 100%;
+    animation: gradient 5s ease infinite;
+  }
+  
+  @keyframes gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+  
+    50% {
+      background-position: 100% 50%;
+    }
+  
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  
+ body>section>form{
+    width: 65%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    width: 65%;
+    justify-content: space-around;
+    align-items: center;
+    transition: all 0.5s ease;
+    border-radius: 0px 10px 10px 0px;
+    
+
+
+}
+body>section>form:hover{
+    backdrop-filter: blur(10px);
+}
+body>section>form>h2{
+    color: rgb(255, 255, 255);
+}
+body>section>form>p{
+    font-size: 20px;
+    transition: all 0.3s ease;
+    color: grey;
+}
+body>section>form>p:hover{
+    color: rgb(255, 255, 255);
+    scale: 1.02;
+}
+
+form>input{
+       width: 70%;
+       height: 40px;
+       border: none;
+       border-radius: 7px;
+       padding-left: 30px;
+       cursor: pointer;
+       transition: all 0.3s ease;
+    
+    
+}   
+
+
+form>input:hover{
+    
+    background-color: rgb(77, 77, 77);
+    
+}
+form>input:focus{
+    box-shadow: 0px 0px 10px rgb(44, 208, 226);
+    
+}
+
+
+
+button{
+    width: 25%;
+    height: 40px;
+    border: none;
+    background-color: black;
+    color: white;
+    font-size: 15px;
+    font-weight: 200;
+    transition: all 0.5s ease;
+}
+
+
+button {
+    cursor: pointer;
+    position: relative;
+    padding: 10px 24px;
+    font-size: 18px;
+    color: rgb(193, 163, 98);
+    border: 2px solid rgb(193, 163, 98);
+    border-radius: 34px;
+    background-color: transparent;
+    font-weight: 600;
+    transition: all 0.3s cubic-bezier(0.23, 1, 0.320, 1);
+    overflow: hidden;
+  }
+  
+  button::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    margin: auto;
+    width: 50px;
+    height: 50px;
+    border-radius: inherit;
+    scale: 0;
+    z-index: -1;
+    background-color: rgb(193, 163, 98);
+    transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+  }
+  
+  button:hover::before {
+    scale: 3;
+  }
+  
+  button:hover {
+    color: #212121;
+    scale: 1.1;
+    box-shadow: 0 0px 20px rgba(193, 163, 98,0.4);
+  }
+  
+  button:active {
+    scale: 1;
+  }
+
+a{
+    text-decoration: none;
+    color: white;
+    font-size: 30px;
+    font-weight: 300;
+    transition: all 0.2s ease;
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    color: #ffffff;
+    font-size: 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+   
+ 
+    margin-top: 40px;
+    letter-spacing: 4px
+}
+
+a:hover{
+    scale: 1.09;
+    background: #03f40f;
+  color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 5px #03f40f,
+              0 0 25px #03f40f,
+              0 0 50px #03f40f,
+              0 0 100px #03f40f;
+    
+}
+
+/* login.css */
+
+/*body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+    font-family: 'Arial', sans-serif;
+}
+
+section {
+    background: rgba(255, 255, 255, 0.85);
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    width: 800px;
+    max-width: 90%;
+    transition: transform 0.3s ease-in-out;
+}
+
+section:hover {
+    transform: scale(1.02);
+}
+
+aside {
+    background: #2575fc;
+    color: white;
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    flex-direction: column;
+}
+
+aside h1 {
+    font-size: 2.5em;
+    margin: 0;
+    animation: fadeIn 1.5s ease;
+}
+
+form {
+    flex: 1;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+    animation: slideIn 1.5s ease;
+}
+
+form h2 {
+    margin-bottom: 20px;
+    font-size: 2em;
+    text-align: center;
+    color: #333;
+}
+
+form>input {
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 2px solid #ddd;
+    border-radius: 25px;
+    font-size: 1em;
+    width: 100%;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease;
+}
+
+input[type="email"]:focus, input[type="password"]:focus {
+    border-color: #2575fc;
+    outline: none;
+}
+
+button {
+    padding: 15px;
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+    border: none;
+    color: white;
+    font-size: 1.2em;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+    background: linear-gradient(to right, #2575fc, #6a11cb);
+    transform: translateY(-3px);
+}
+
+p {
+    margin-top: 20px;
+    text-align: center;
+    color: #666;
+}
+
+a {
+    color: #2575fc;
+    text-decoration: none;
+    text-align: center;
+    display: block;
+    margin-top: 10px;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #6a11cb;
+    text-decoration: underline;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideIn {
+    from { transform: translateY(50px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+
